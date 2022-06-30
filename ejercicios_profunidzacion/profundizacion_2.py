@@ -50,7 +50,7 @@ while True:
         print("El resultado de multiplicar ", numero_1 ," y ", numero_2, " es ", numero_1 * numero_2)
     elif operacion == "**" :    
         print("El resultado de potenciar ", numero_1 ," a la ", numero_2, " es ", numero_1 ** numero_2)
-    elif operacion != "FIN" :
+    elif operacion == "FIN" :
         break
     else:
         print("operacion invalida")
