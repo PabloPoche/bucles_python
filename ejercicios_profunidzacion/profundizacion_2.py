@@ -35,3 +35,23 @@ alguno de lo soportados o no es la palabra "FIN".
 
 print("Mi Calculadora (^_^)")
 # Empezar aquí la resolución del ejercicio
+
+while True:
+    numero_1 = float(input("Ingrese el primer numero:"))
+    numero_2 = float(input("Ingrese el segundo numero:"))
+    operacion = str(input("Ingrese operacion:"))
+    if operacion == "+" :
+        print("El resultado de sumar ", numero_1 ," y ", numero_2, " es ", numero_1 + numero_2)
+    elif operacion == "-" :
+        print("El resultado de restar ", numero_1 ," y ", numero_2, " es ", numero_1 - numero_2)
+    elif operacion == "/" :
+        print("El resultado de dividir ", numero_1 ," y ", numero_2, " es ", numero_1 / numero_2 )
+    elif operacion == "*" :
+        print("El resultado de multiplicar ", numero_1 ," y ", numero_2, " es ", numero_1 * numero_2)
+    elif operacion == "**" :    
+        print("El resultado de potenciar ", numero_1 ," a la ", numero_2, " es ", numero_1 ** numero_2)
+    elif operacion != "FIN" :
+        break
+    else:
+        print("operacion invalida")
+        
