@@ -35,7 +35,6 @@ que son negativas, en ese caso el alumno estuvo ausente
 
 Debe contar la cantidad de notas válidas y la cantidad de ausentes
 '''
-
 print("Mi organizador académico (#_#)")
 # Empezar aquí la resolución del ejercicio
 

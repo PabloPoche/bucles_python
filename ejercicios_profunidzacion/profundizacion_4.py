@@ -39,7 +39,6 @@ NOTA: No se debe ordenar la lista de temperaturas, se debe obtener
 el máximo y el mínimo utilizando los mismos métodos vistos
 durante la clase (ejemplos_clase/ejemplo_5.py)
 '''
-
 print("Mi primer pasito en data analytics")
 # Empezar aquí la resolución del ejercicio
 

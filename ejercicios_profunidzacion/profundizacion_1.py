@@ -23,7 +23,6 @@ Al finalizar el bucle, utilice la variable "cantidad_numeros" y la variable
 Tener en cuenta que "range" no incluye el número de "fin" en su secuencia,
 sino que va hasta el anterior.
 '''
-
 print('Comenzamos a ponernos serios!')
 # Empezar aquí la resolución del ejercicio
 
