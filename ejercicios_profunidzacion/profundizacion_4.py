@@ -49,21 +49,36 @@ temperatura_sumatoria = 0   # Aquí debe ir almacenando la suma de todas las tem
 temperatura_promedio = 0    # Al finalizar el loop deberá aquí alamcenar el promedio
 temperatura_len = 0         # Aquí debe almacenar cuantas temperatuas hay en la lista
 
+temperatura_len = len(temp_dataloger)
+
 # Colocar el bucle aqui......
+for i in range(temperatura_len):
+    if temp_dataloger[i] > temperatura_max :
+        temperatura_max = temp_dataloger[i]
+    if temp_dataloger[i] < temperatura_min :
+        temperatura_min = temp_dataloger[i]
+        
+    temperatura_sumatoria += temp_dataloger[i]
 
 # Al finalizar el bucle compare si el valor que usted calculó para
 # temperatura_max y temperatura_min coincide con el que podría calcular
 # usando la función "max" y la función "min" de python
 # función "max" --> https://www.w3schools.com/python/ref_func_max.asp
 # función "min" --> https://www.w3schools.com/python/ref_func_min.asp
+print("Funcion max de python:", max(temp_dataloger))
+print("Funcion min de python:", min(temp_dataloger))
 
 # Al finalizar el bucle debe calcular el promedio como:
 # temperatura_promedio = temperatura_sumatoria / cantidad_temperatuas
-
+cantidad_temperatuas = temperatura_len
+temperatura_promedio = temperatura_sumatoria / cantidad_temperatuas
+print(Temperatura promedio:", temperatura_promedio)
+      
 # Corroboren los resultados de temperatura_sumatoria
 # usando la función "sum"
 # función "sum" --> https://www.w3schools.com/python/ref_func_sum.asp
-
+print("Funcion sum de python:", sum(temp_dataloger))
+      
 '''
 Una vez que tengamos nuestros valores correctamente calculados debemos
 determinar en que epoca del año nos encontramos en Buenos Aires utilizando
@@ -83,3 +98,21 @@ https://es.weatherspark.com/y/28981/Clima-promedio-en-Buenos-Aires-Argentina-dur
 # ¿En qué época del año nos encontramos?
 # Imprima el resultado en pantalla
 # Debe utilizar temperatura_max y temperatura_min para definirlo
+if temperatura_min >= 19 and temperatura_max <= 28 :
+    print("verano")
+if temperatura_min >= 11 and temperatura_max <= 20 :
+    print("otoño")
+if temperatura_min >= 4 and temperatura_max <= 14 :
+    print("invierno")
+if temperatura_min >= 10 and temperatura_max <= 24 :
+    print("primavera")
+      
+if temperatura_min >= 19 and temperatura_max <= 28 :
+    print("verano")
+elif temperatura_min >= 11 and temperatura_max <= 20 :
+    print("otoño")
+elif temperatura_min >= 4 and temperatura_max <= 14 :
+    print("invierno")
+elif temperatura_min >= 10 and temperatura_max <= 24 :
+    print("primavera")      
+      
